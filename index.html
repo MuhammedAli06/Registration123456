@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="loginPage" class="login">
+        <input id="userLogin" type="text" placeholder="Login"> <br>
+        <input id='userPassword' type="password" placeholder="Password"> <i onclick="showPassword()" class="fas fa-eye"></i> <br>
+        <button onclick="login()">Login</button> <br> <br>
+        <button onclick="toRegister()">to Register</button>
+        <p id="info" style="display: none; color: red;">Incorrect login or password</p>
+    </div>
+<br> <br>
+    <div style="display: none;" id="registerPage" class="register">
+        <input id="userRegistName" type="text" placeholder="Name"> <br>
+        <input id="userRegistLogin" type="text" placeholder="Login">  <br>
+        <input id="userRegistPassword" type="password" placeholder="Password"> <i onclick="showPassword1()" class="fas fa-eye"></i>  <br>
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
